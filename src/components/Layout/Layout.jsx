@@ -1,5 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
+import logoHeader from "../../assets/LOGO.svg";
+import logoFooter from "../../assets/logoBW.svg";
 
 const Layout = () => {
     return <>
@@ -8,7 +10,7 @@ const Layout = () => {
                 <div className="header-container">
                     <section className="logo"> 
                         <Link to="/">
-                            <img src="/public/assets/LOGO.svg" alt="logo kasa" />
+                            <img src={logoHeader} alt="logo kasa" />
                         </Link>                        
                     </section>
                     <nav className="nav">
@@ -37,7 +39,7 @@ const Layout = () => {
         <footer>
             <div className="container">
                 <section>
-                    <img src="/public/assets/logoBW.svg" alt="logo noir et blanc kasa" />
+                    <img src={logoFooter} alt="logo noir et blanc kasa" />
                 </section>
                 <section>
                     <p>© 2020 Kasa. All rights reserved</p>
