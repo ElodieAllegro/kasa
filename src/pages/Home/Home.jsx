@@ -2,7 +2,7 @@ import './home.scss'
 import { useEffect, useState } from 'react'
 
 import Card from '../../components/Card/Card'
-import HeaderImage from '../../components/HeaderImage/HeaderImage'
+import HeaderImage from "../../../public/assets/banner1.svg";
 
 const Home = () => {
 

@@ -1,6 +1,6 @@
 import './about.scss'
 import Accordeon from "../../components/Accordeon/Accordeon";
-import HeaderImage from '../../components/HeaderImage/HeaderImage';
+import HeaderImage from "../../../public/assets/banner2.svg";
 
 const About = () => {
     return <>
