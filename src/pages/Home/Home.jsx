@@ -9,7 +9,8 @@ const Home = () => {
     const [locations, setLocations] = useState([])
 
     useEffect(() => {
-        fetch('data.json')  //Appel vers le fichier JSON
+        fetch('https://ElodieAllegro.github.io/kasa/data.json')
+        //Appel vers le fichier JSON
         .then(res => res.json()) //conversion des objets en javascript
         .then((data) => { 
             setLocations(data) //Mise à jour du state avec les données des logements
