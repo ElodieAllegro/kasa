@@ -20,7 +20,8 @@ const router = createBrowserRouter(
           element={<Location />} 
           errorElement={<Error404 />}
           loader={({ params }) => {
-            return fetch('/data.json')
+            return fetch('https://ElodieAllegro.github.io/kasa/data.json')
+
               .then(res => res.json())
               .then(data => {
   
