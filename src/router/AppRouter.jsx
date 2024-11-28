@@ -14,7 +14,7 @@ const router = createBrowserRouter(
       <Route 
         element={<Layout />}
       >
-        <Route path="" element={<Home />} />
+        <Route path="/kasa" element={<Home />} />
         <Route 
           path="locations/:id"
           element={<Location />} 
