@@ -1,11 +1,12 @@
 import './about.scss'
 import Accordeon from "../../components/Accordeon/Accordeon";
-import HeaderImage from "../../../public/assets/banner2.svg";
-
+import HeaderImage from '../../components/HeaderImage/HeaderImage';
+import BannerAbout from '../../../public/assets/bannerAbout.svg';
 const About = () => {
     return <>
      <HeaderImage 
-        img src={HeaderImage} alt="bannière kasa" 
+        image={BannerAbout}
+        title="Chez vous, partout et ailleurs" 
       />
       <div className="accordeon-container">
       <Accordeon title="Fiabilité">

@@ -2,16 +2,15 @@ import './home.scss'
 import { useEffect, useState } from 'react'
 
 import Card from '../../components/Card/Card'
-import HeaderImage from "../../../public/assets/banner1.svg";
-
+import HeaderImage from '../../components/HeaderImage/HeaderImage'
+import BannerHome from '../../../public/assets/bannerHome.svg'
 
 const Home = () => {
 
     const [locations, setLocations] = useState([])
 
     useEffect(() => {
-        fetch('https://ElodieAllegro.github.io/kasa/data.json')
-        //Appel vers le fichier JSON
+        fetch('https://ElodieAllegro.github.io/kasa/data.json')  //Appel vers le fichier JSON
         .then(res => res.json()) //conversion des objets en javascript
         .then((data) => { 
             setLocations(data) //Mise à jour du state avec les données des logements
@@ -22,7 +21,7 @@ const Home = () => {
         <>
          
       <HeaderImage 
-        img src={HeaderImage} alt="bannière kasa" 
+        image={BannerHome}
         title="Chez vous, partout et ailleurs" 
       />
             <div className="container-locations"> 
