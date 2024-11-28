@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Card from '../../components/Card/Card'
 import HeaderImage from "../../../public/assets/banner1.svg";
 
+
 const Home = () => {
 
     const [locations, setLocations] = useState([])
@@ -21,7 +22,7 @@ const Home = () => {
         <>
          
       <HeaderImage 
-        image={HeaderImage}
+        img src={HeaderImage} alt="bannière kasa" 
         title="Chez vous, partout et ailleurs" 
       />
             <div className="container-locations"> 
