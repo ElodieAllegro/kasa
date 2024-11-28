@@ -1,0 +1,49 @@
+
+  .accordeon {
+    margin-bottom: 30px;
+    .title {
+      background: var(--primary-color);
+      color:var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+
+      button {
+        background: transparent;
+        border: none;
+      }
+
+      button img {
+        transform: rotate(180deg);
+        transition: transform 0.5s linear;
+      }
+    }
+    .accordeon-content {
+      overflow: hidden;
+      transition: height 0.5s ease-in-out;
+      background: var(--secondary-color);
+
+      > div {
+        padding: 16px 20px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &.open {
+      button img {
+        transform: rotate(0deg);
+      }
+    }
+  }

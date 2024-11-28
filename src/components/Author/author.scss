@@ -1,0 +1,38 @@
+.author{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    .author-picture {       
+        border-radius: 70px;
+        width: 32px;
+        height: 32px;
+}
+.author-name{
+    font-size: 16px;
+    color:var(--primary-color);
+    width: 20%;
+    margin: 0 10px;
+    text-align: end;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .author{
+        display: flex;        
+        margin: 12px 0;
+      
+        .author-picture {       
+            border-radius: 70px;
+            width: 64px;
+            height: 64px;
+    }
+    .author-name{
+        font-size: 18px;
+        justify-content: end;
+        width: auto;
+        margin: 0 10px;
+        text-align: end;
+    }
+  }
+}

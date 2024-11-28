@@ -1,0 +1,28 @@
+.locations {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    border-radius: 25px;
+    margin-top: 40px;
+  }
+.locations li {
+    height: 340px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .locations {
+      grid-template-columns: repeat(2, 3fr);
+      background-color: var(--secondary-color);
+      padding: 30px;
+
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .locations {
+      grid-template-columns: repeat(3, 3fr);
+    }
+  }

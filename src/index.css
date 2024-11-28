@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url('assets/fonts/Montserrat/static/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+
+:root {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --primary-color: rgba(255, 96, 96, 1);
+  --secondary-color:rgba(246, 246, 246, 1);
+  --tertiary-color: #f6f6f673;
+  --fourth-color: #000000;
+}
+
+a {
+  font-weight: 500;
+  color: var(--fourth-color);
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  /* display: flex;
+  place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+} */
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .logo img {
+    width: 110px;
+    gap: 0px;
+  }
+  
+  nav ul{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  nav ul li a{
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+footer{
+  background-color:var(--fourth-color);
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+footer section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+footer section img{
+  padding-top: 40px;
+  width: 122px;
+  height: 39.44px;
+}
+footer p{
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 374px){
+  .header-container {
+    .logo img { 
+      width: 145px;
+
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .header-container {
+
+    .logo img { 
+      width: 210px;
+  
+    }
+
+    nav ul li a{
+      font-size: 24px;
+      text-transform: none;
+    }
+  }
+
+
+}
