@@ -8,7 +8,7 @@ const Layout = () => {
                 <div className="header-container">
                     <section className="logo"> 
                         <Link to="/">
-                            <img src="/src/assets/LOGO.svg" alt="logo kasa" />
+                            <img src="/public/assets/LOGO.svg" alt="logo kasa" />
                         </Link>                        
                     </section>
                     <nav className="nav">
@@ -37,7 +37,7 @@ const Layout = () => {
         <footer>
             <div className="container">
                 <section>
-                    <img src="/src/assets/logoBW.svg" alt="logo noir et blanc kasa" />
+                    <img src="/public/assets/logoBW.svg" alt="logo noir et blanc kasa" />
                 </section>
                 <section>
                     <p>© 2020 Kasa. All rights reserved</p>
