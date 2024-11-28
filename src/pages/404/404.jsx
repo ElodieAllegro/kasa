@@ -11,7 +11,7 @@ const Error404 = () => {
             <img src={ErrorImage} alt="Error image" />
             <p>Oups! La page que vous demandez n'existe pas.</p>
 
-            <Link to=''>Retourner sur la page d’accueil !</Link>
+            <Link to='/'>Retourner sur la page d’accueil</Link>
         </div>        
     </div>
 }
