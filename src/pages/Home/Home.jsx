@@ -21,7 +21,7 @@ const Home = () => {
         <>
          
       <HeaderImage 
-        image="/src/assets/banner1.svg" 
+        image={HeaderImage}
         title="Chez vous, partout et ailleurs" 
       />
             <div className="container-locations"> 

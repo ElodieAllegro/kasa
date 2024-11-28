@@ -5,7 +5,7 @@ import HeaderImage from "../../../public/assets/banner2.svg";
 const About = () => {
     return <>
      <HeaderImage 
-        image="/src/assets/banner2.svg" 
+        image="{HeaderImage}"
       />
       <div className="accordeon-container">
       <Accordeon title="Fiabilité">
