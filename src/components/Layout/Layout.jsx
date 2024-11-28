@@ -1,7 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logoHeader from "../../assets/LOGO.svg";
-import logoFooter from "../../assets/logoBW.svg";
+import logoHeader from "../../../public/assets/logo.svg";
+import logoFooter from "../../../public/assets/logoBW.svg";
+
 
 const Layout = () => {
     return <>
