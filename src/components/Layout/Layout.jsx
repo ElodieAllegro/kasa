@@ -10,14 +10,14 @@ const Layout = () => {
             <div className="container">
                 <div className="header-container">
                     <section className="logo"> 
-                        <Link to="/kasa">
+                        <Link to="/">
                             <img src={logoHeader} alt="logo kasa" />
                         </Link>                        
                     </section>
                     <nav className="nav">
                         <ul>
                             <li>
-                                <NavLink to="/kasa">
+                                <NavLink to="/">
                                     Accueil
                                 </NavLink>
                             </li>                        
